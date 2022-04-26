@@ -22,6 +22,9 @@ func expandRepositoryCredentials(d *schema.ResourceData) *application.RepoCreds 
 	if v, ok := d.GetOk("password"); ok {
 		repoCreds.Password = v.(string)
 	}
+	if v, ok := d.GetOk("enable_oci"); ok {
+		repoCreds.EnableOCI = v.(bool)
+	}
 	if v, ok := d.GetOk("ssh_private_key"); ok {
 		repoCreds.SSHPrivateKey = v.(string)
 	}

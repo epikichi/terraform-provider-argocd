@@ -33,6 +33,7 @@ resource "argocd_repository" "private" {
 * `insecure` - (Optional), boolean, whether to verify the repository TLS certificate.
 * `name` - (Optional), string, only for Helm repositories.
 * `enable_lfs` - (Optional), boolean, whether git-lfs support should be enabled for this repository.
+* `enable_oci` - (Optional), boolean, whether [Open Container Initiative](https://opencontainers.org/about/overview/) support should be enabled for this repository.
 * `username` - (Optional), string, username to authenticate against the repository server.
 * `password` - (Optional), string, password to authenticate against the repository server.
 * `ssh_private_key` - (Optional), string, SSH private key data to authenticate against the repository server. **Only for Git repositories**.
