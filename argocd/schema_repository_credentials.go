@@ -22,6 +22,11 @@ func repositoryCredentialsSchema() map[string]*schema.Schema {
 			Description: "Password for authenticating at the repo server",
 			Optional:    true,
 		},
+		"enable_oci": {
+			Type:        schema.TypeBool,
+			Description: "Whether to use OCI protocol for the repo server",
+			Optional:    true,
+		},
 		"ssh_private_key": {
 			Type:         schema.TypeString,
 			Sensitive:    true,

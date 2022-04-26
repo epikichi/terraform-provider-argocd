@@ -16,6 +16,9 @@ func expandRepository(d *schema.ResourceData) *application.Repository {
 	if v, ok := d.GetOk("enable_lfs"); ok {
 		repository.EnableLFS = v.(bool)
 	}
+	if v, ok := d.GetOk("enable_oci"); ok {
+		repository.EnableOCI = v.(bool)
+	}
 	if v, ok := d.GetOk("inherited_creds"); ok {
 		repository.InheritedCreds = v.(bool)
 	}

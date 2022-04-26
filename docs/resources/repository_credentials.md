@@ -23,6 +23,7 @@ resource "argocd_repository" "private" {
 * `url` - (Required), string, URL that these credentials matches to.
 * `username` - (Optional), string, username to authenticate against the repository server.
 * `password` - (Optional), string, password to authenticate against the repository server.
+* `enable_oci` - (Optional), boolean, whether to use [Open Container Initiative](https://opencontainers.org/about/overview/) protocol against the repository server.
 * `ssh_private_key` - (Optional), string, SSH private key data to authenticate against the repository server. **Only for Git repositories**.
 * `tls_client_cert_data` - (Optional), TLS client cert data to authenticate against the repository server.
 * `tls_client_cert_key` - (Optional), TLS client cert key to authenticate against the repository server.

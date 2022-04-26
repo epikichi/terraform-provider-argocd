@@ -18,6 +18,11 @@ func repositorySchema() map[string]*schema.Schema {
 			Description: "Whether git-lfs support should be enabled for this repo",
 			Optional:    true,
 		},
+		"enable_oci": {
+			Type:        schema.TypeBool,
+			Description: "Whether OCI support should be enabled for this repo.",
+			Optional:    true,
+		},
 		"inherited_creds": {
 			Type:        schema.TypeBool,
 			Description: "Whether credentials were inherited from a credential set",
